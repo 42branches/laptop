@@ -54,6 +54,11 @@ case "$SHELL" in
     ;;
 esac
 
+if [ ! -f "$HOME/.ssh/id_rsa.pub" ]; then
+  fancy_echo "Generating an SSH key ..."
+  ssh-keygen -t rsa
+fi
+
 brew_install_or_upgrade() {
   if brew_is_installed "$1"; then
     if brew_is_upgradable "$1"; then
@@ -159,12 +164,6 @@ brew_install_or_upgrade 'node'
 brew_install_or_upgrade 'heroku-toolbelt'
 brew_install_or_upgrade 'parity'
 brew_install_or_upgrade 'rcm'
-
-if [ ! -f "$HOME/.ssh/id_rsa.pub" ]; then
-  fancy_echo "Generating an SSH key ..."
-  ssh-keygen -t rsa
-fi
-
 brew_install_or_upgrade 'rbenv'
 brew_install_or_upgrade 'ruby-build'
 
