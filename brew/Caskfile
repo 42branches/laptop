@@ -1,0 +1,77 @@
+cask_args appdir: '/Applications'
+
+# Standard Stuff
+cask 'alfred'
+cask 'bartender'
+cask 'chrome'
+cask 'dropbox'
+cask 'growlnotify'
+cask 'skype'
+cask 'spectacle'
+
+
+# Lifestyle Apps
+cask 'cloud'
+cask 'drobo-dashboard'
+cask 'fission'
+cask 'logitech-myharmony'
+cask 'musicbrainz-picard'
+cask 'scansnap-manager-ix500'
+cask 'sonos'
+cask 'torbrowser'
+cask 'yate'
+
+
+# Development Tools
+cask 'atom'
+cask 'boot2docker-status'
+cask 'boot2docker'
+cask 'charles'
+cask 'dash'
+cask 'github-desktop'
+cask 'iterm2'
+cask 'kaleidoscope'
+cask 'omnifocus'
+cask 'omnigraffle'
+cask 'paw'
+cask 'rubymotion'
+cask 'screenhero'
+cask 'vagrant'
+cask 'virtualbox'
+
+
+# IDEs
+cask 'clion'
+cask 'datagrip'
+cask 'intellij-idea'
+cask 'pycharm'
+cask 'rubymine'
+cask 'webstorm'
+
+
+# System Tools
+cask 'gpgtools'
+cask 'ip-vanish-vpn'
+cask 'netspot'
+cask 'tplink-powerline-utility'
+
+
+# Quicklook Plugins
+cask 'betterzipql'
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'qlstephen'
+cask 'quartzcomposer'
+cask 'quicklook-json'
+
+
+# DJ Software
+cask 'beatport-pro'
+cask 'flow-8-deck'
+cask 'metabliss'
+cask 'mixed-in-key-7'
+cask 'mixed-in-key-mashup'
+cask 'platinum-notes-4'
+cask 'rekordbox'
+cask 'serato-dj'
+cask 'traktor'

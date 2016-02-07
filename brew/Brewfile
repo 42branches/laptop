@@ -1,0 +1,37 @@
+
+# Git Stuff
+brew 'git'
+brew 'git-flow'
+brew 'hub'
+
+
+# Dev Stuff
+brew 'node'
+brew 'npm'
+brew 'nvm'
+brew 'python'
+brew 'rbenv'
+brew 'ruby-build'
+brew 'openssl'
+brew 'heroku-toolbelt'
+brew 'imagemagick'
+brew 'libyaml'
+brew 'packer'
+brew 'postgres', restart_service: true
+brew 'redis', restart_service: true
+
+
+# ZSH Stuff
+brew 'zsh'
+brew 'zsh-completions'
+brew 'zsh-syntax-highlighting'
+
+
+# Terminal Tools
+brew 'ngrok'
+brew 'rcm'
+brew 'reattach-to-user-namespace'
+brew 'the_silver_searcher'
+brew 'tmate'
+brew 'tmux'
+brew 'wget'

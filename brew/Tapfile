@@ -1,0 +1,7 @@
+tap 'caskroom/cask'
+tap 'caskroom/fonts'
+tap 'caskroom/versions'
+tap '42branches/cask'
+tap 'homebrew/services'
+tap 'nviennot/tmate'
+tap 'thoughtbot/formulae'
