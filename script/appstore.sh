@@ -1,22 +1,25 @@
-echo "Please launch the Mac App Store app and ensure you are logged in ..."
-echo "<enter to continue>"
+#!/bin/sh
+source 'script/functions.sh'
+
+fancy_echo "Please launch the Mac App Store app and ensure you are logged in ..."
+fancy_echo "<enter to continue>"
 read
 
-echo "In order to script the App Store you need to add Terminal / iTerm to"
-echo "System Preferences > Security & Privacy > Privacy > Accessibility"
+fancy_echo "In order to script the App Store you need to add Terminal / iTerm to"
+fancy_echo "System Preferences > Security & Privacy > Privacy > Accessibility"
 
 osascript -e 'tell app "System Events" to windows of process "SystemUIServer"' 2>/dev/null
 osascript -e 'tell app "System Preferences" to activate' 2>/dev/null
 osascript -e 'tell app "System Preferences" to tell pane id "com.apple.preference.security"' 2>/dev/null
 
-echo "<enter to continue>"
+fancy_echo "<enter to continue>"
 read
 
 while IFS='' read -r line || [[ -n "$line" ]]; do
     IFS='|' read -r name location <<< "$line"
-    app=$(echo $location | sed -e 's/^[ \t]*//')
+    app=$(fancy_echo $location | sed -e 's/^[ \t]*//')
     
-    echo "Installing $name from Mac App Store ..."
+    fancy_echo "Installing $name from Mac App Store ..."
     open "$app" 2>/dev/null
     
     sleep 5s
@@ -27,4 +30,4 @@ while IFS='' read -r line || [[ -n "$line" ]]; do
     
 done < appstore/Apps | grep -v "#"
 
-echo "All done!"
+fancy_echo "All done!"

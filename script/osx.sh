@@ -1,4 +1,5 @@
 #!/bin/sh
+source 'script/functions.sh'
 
 # ~/.osx — https://mths.be/osx
 

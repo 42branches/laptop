@@ -1,4 +1,5 @@
 #!/bin/sh
+source 'script/functions.sh'
 
 # Brew
 
