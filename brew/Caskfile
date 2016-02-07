@@ -59,7 +59,6 @@ cask 'betterzipql'
 cask 'qlcolorcode'
 cask 'qlmarkdown'
 cask 'qlstephen'
-cask 'quartzcomposer'
 cask 'quicklook-json'
 
 
