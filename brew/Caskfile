@@ -3,7 +3,7 @@ cask_args appdir: '/Applications'
 # Standard Stuff
 cask 'alfred'
 cask 'bartender'
-cask 'chrome'
+cask 'google-chrome'
 cask 'dropbox'
 cask 'growlnotify'
 cask 'skype'
@@ -51,9 +51,7 @@ cask 'webstorm'
 
 # System Tools
 cask 'gpgtools'
-cask 'ip-vanish-vpn'
 cask 'netspot'
-cask 'tplink-powerline-utility'
 
 
 # Quicklook Plugins
@@ -65,7 +63,12 @@ cask 'quartzcomposer'
 cask 'quicklook-json'
 
 
-# DJ Software
+# Other (custom casks)
+cask 'ip-vanish-vpn'
+cask 'tplink-powerline-utility'
+
+
+# DJ Software (custom casks)
 cask 'beatport-pro'
 cask 'flow-8-deck'
 cask 'metabliss'
