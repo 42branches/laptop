@@ -11,7 +11,6 @@ cask 'skype'
 
 # Lifestyle Apps
 cask 'drobo-dashboard'
-cask 'fission'
 cask 'logitech-myharmony'
 cask 'scansnap-manager-ix500'
 cask 'sonos'
@@ -20,6 +19,7 @@ cask 'yate'
 
 
 # Development Tools
+cask 'adobe-creative-cloud'
 cask 'atom'
 cask 'charles'
 cask 'github-desktop'
