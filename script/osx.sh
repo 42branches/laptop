@@ -3,7 +3,7 @@ source 'script/functions.sh'
 
 # ~/.osx — https://mths.be/osx
 
-fancy_echo "Setting up OSX Defaults ..."
+echo "Setting up OSX Defaults ..."
 
 # Ask for the administrator password upfront
 sudo -v
@@ -143,7 +143,7 @@ defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool false
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -479,4 +479,4 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	killall "${app}" > /dev/null 2>&1
 done
 
-fancy_echo "Done. Note that some of these changes require a logout/restart to take effect."
+echo "Done. Note that some of these changes require a logout/restart to take effect."
