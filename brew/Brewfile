@@ -19,6 +19,7 @@ brew 'libyaml'
 brew 'packer'
 brew 'postgres', restart_service: true
 brew 'redis', restart_service: true
+brew 'tag'
 brew 'zsh-syntax-highlighting'
 
 
@@ -29,10 +30,6 @@ brew 'zsh-syntax-highlighting'
 
 
 # Terminal Tools
+brew 'mas'
 brew 'ngrok'
-brew 'rcm'
-brew 'reattach-to-user-namespace'
-brew 'the_silver_searcher'
-brew 'tmate'
-brew 'tmux'
 brew 'wget'

@@ -32,9 +32,6 @@ fancy_echo "Installing Homebrew Packages ..."
 brew bundle -v --file=brew/Brewfile
 brew unlink openssl && brew link openssl --force
 
-fancy_echo "Installing Fonts ..."
-brew bundle -v --file=brew/Fontfile
-
 fancy_echo "Installing Casks ..."
 brew bundle -v --file=brew/Caskfile
 

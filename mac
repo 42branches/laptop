@@ -3,4 +3,5 @@
 source 'script/functions.sh'
 source 'script/setup.sh'
 source 'script/brew.sh'
+source 'script/ruby.sh'
 source 'script/osx.sh'
